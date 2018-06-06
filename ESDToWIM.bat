@@ -116,6 +116,7 @@ echo.
 :cmd
 set /p debug="%title% Debug %cd%>"
 if "%debug%"=="" goto cmd
+if %debug%==exit goto eoc
 %debug%
 goto debug
 
