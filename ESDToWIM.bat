@@ -1,6 +1,6 @@
 :start
 @echo off
-color 0f
+color
 
 set /a convertedindexes=0
 set bar==============================================================
@@ -132,6 +132,7 @@ goto eoc
 
 :eoc
 title Exiting - ESDToWIM
+color
 echo.
 echo Goodbye.
 timeout /t 3 /nobreak >nul
